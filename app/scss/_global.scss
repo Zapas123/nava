@@ -1,0 +1,38 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+ul,
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 50px;
+}
+.top__title{
+    margin-top: 200px;
+    text-align: center;
+    font-size: 30px;
+    color: #343435;
+    line-height: 28px;
+    font-family: 'Roboto', sans-serif;
+}
+.top__text{
+    margin-top: 20px;
+    margin-bottom: 80px;
+    font-size: 16px;
+    color: #717171;
+    text-align: center;
+}

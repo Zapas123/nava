@@ -1,12 +1,234 @@
-html{
-    box-sizing: border-box;
+@import '_vars';
+@import '_global';
+
+// start header
+.container__fluid{
+    max-width: 1500px;
+    margin: 0 auto;
 }
-*,
-*::before,
-*::after{
-    box-sizing: inherit;
+.header{
+    background-image: url(../images/Background.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    height: 900px;
 }
-.box{
+.header__top{
     display: flex;
-    
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
 }
+.header__btn{
+    a{
+        color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 22px;
+        padding: 10px 25px;
+        border: 1px solid rgba(117, 190, 218, 0.0);
+        border-radius: 5px;
+        &:hover{
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+        }
+    }
+}
+.header__title{
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 72px;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 20px;
+}
+.header__text{
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 90px;
+}
+.header__form{
+    position: relative;
+    input{
+        border: none;
+        display: block;
+        width: 770px;
+        height: 60px;
+        padding-left: 30px;
+        padding-right: 240px;
+        font-size: 14px;
+        color: #717171;
+        margin: 0 auto;
+        border-radius: 3px;
+        outline: none;
+        &::placeholder{
+            color: #717171;
+        }
+    }
+    button{
+        position: absolute;
+        top: 0;
+        right: 365px;
+        background-color: #e7434e;
+        border: none;
+        height: 60px;
+        width: 200px;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        padding-left: 25px;
+        padding-top: 7px;
+        border-radius: 3px;
+        outline: none;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url(../images/sailboat.png);
+            height: 30px;
+            width: 30px;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            left: 40px;
+            top: 23px;
+        }
+    }
+}
+// end header
+// start statistic
+.statistic{
+    position: relative;
+    &__items{
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0px 0px 30px 0px rgba(52, 52, 52, 0.15);
+        background-color: #fff;
+        position: absolute;
+        top: -70px;
+        border-radius: 5px;
+        margin-bottom: 100px;
+        li{
+            width: 300px;
+            text-align: center;
+            height: 80px;
+            margin: 30px 0px 30px;
+            padding-top: 5px;
+        }
+    }
+    &__number{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    &__text{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        color: #717171;
+    }
+}
+li + li{
+    border-left: 1px solid #d4d4d4;
+}
+
+// end statistic
+// start top
+.top__items{
+    &-position{
+        width: 725px;
+        height: 350px;
+        border-radius: 5px;
+        &-two{
+            width: 350px;
+            height: 350px;
+            border-radius: 5px;
+        }
+        &-tree{
+            width: 350px;
+            height: 350px;
+            margin-top: 30px;
+            border-radius: 5px;
+        }
+        &-four{
+            width: 350px;
+            height: 350px;
+            margin-top: 30px;
+            border-radius: 5px;
+        }
+        &-five{
+            width: 350px;
+            height: 350px;
+            margin-top: 30px;
+            border-radius: 5px;
+        }
+    }
+    &-list{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &-boats{
+        position: relative;
+        background-color: #e7434e;
+        width: 70px;
+        height: 30px;
+        border-radius: 3px;
+        padding: 7px 35px;
+        color: #fff;
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        margin: 30px 20px;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url(../images/sailboat.png);
+            height: 30px;
+            width: 30px;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            left: 10px;
+            top: 6px;
+        }
+    }
+    &-title{
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        padding: 180px 20px 5px;
+    }
+    &-text{
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        padding-left: 20px;
+    }
+}
+.more{
+    text-align: center;
+    margin: 100px 380px 80px;
+    border: 1px solid #bdbdbd;
+    display: block;
+    padding: 20px 30px;
+    border-radius: 3px;
+    transition: all .3s;
+    cursor: pointer;
+    &:hover{
+        background-color: #e7434e;
+    }
+    a{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #343434;
+        transition: all .3s;
+        &:hover{
+            color: #fff;
+        }
+    }
+}
+
+
+// end top
+  
