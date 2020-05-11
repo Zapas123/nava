@@ -1,0 +1,226 @@
+@media (max-width: 1520px){
+    .header__form{
+        input{
+            max-width: 100%;
+            margin-bottom: 40px;
+            padding-right: 20px;
+        }
+        button{
+            
+            width: 100%;
+            bottom: 80px;
+            border-radius: 3px;
+            top: 70px;
+            border-radius: 3px;
+        }
+    }
+    .header__logo{
+        margin-left: 20px;
+    }
+    .header__btn{
+        display: none;
+        background-color: rgba(255, 255, 255, 0.5);
+        text-align: center;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        left: 0;
+        a{
+            display: block;
+            padding: 20px 0;
+        }
+    }
+    .menu__btn{
+        display: block;
+        margin-right: 30px;
+        width: 30px;
+        cursor: pointer;
+        div{
+            background-color: #fff;
+            height: 3px;
+            & + div{
+                margin-top: 5px;
+            }
+        }
+    }
+    .statistic{
+        display: none;
+    }
+}
+@media (max-width: 1320px){
+    .top{
+        a{
+            margin: 50px 400px 50px;
+            padding: 10px 20px;
+            font-size: 10px;
+        }
+    }
+    .top__items-position-two{
+        margin-top: 30px;
+    }
+    .top__items-position{
+        display: none;
+    }
+}
+
+@media (max-width: 1320px){
+    .header__form{
+        input{
+            max-width: 370px;
+            padding-right: 30px;
+        }
+        button{
+            width: 100%;
+            &::before{
+                margin-left: -25px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1320px){
+    .header__form{
+        input{
+            font-size: 10px;
+            height: 40px;
+            max-width: 100%;
+            padding-right: 130px;
+            padding-left: 20px;
+        }
+        button{
+            top: 50px;
+            font-size: 11px;
+            height: 40px;
+            width: 100%;
+            &::before{
+                margin-left: -25px;
+                top: 13px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px){
+    .top{
+        a{
+            margin: 50px 100px 50px 400px;
+            padding: 10px 20px;
+            font-size: 10px;
+        }
+    }
+    .featured{
+        a{
+            margin: 50px 100px 50px 400px;
+            padding: 10px 20px;
+            font-size: 10px; 
+        }
+    }
+    .header__title{
+        font-size: 52px;
+    }
+    .header__text{
+        font-size: 20px;
+    }
+    .header__form{
+        input{
+            max-width: 100%;
+            margin-bottom: 40px;
+            padding-right: 20px;
+        }
+        button{
+             width: 100%;
+             bottom: 80px;
+            border-radius: 3px;
+            top: 45px;
+            border-radius: 3px;
+        }
+    }
+    .footer__inner{
+        flex-wrap: wrap;
+    }
+    .footer__sub{
+        margin-bottom: 30px;
+        min-width: 100%;
+    }
+    .footer__col{
+        margin-bottom: 30px;
+        min-width: 100%;
+    }
+    .footer__title{
+        color: $red;
+    }
+    .own-boat{
+        &__title{
+            font-size: 50px;
+        }
+        &__text{
+            font-size: 15px;
+        }
+        a{
+            margin: 50px 100px 50px 150px;
+            padding: 10px 30px;
+            font-size: 10px; 
+        }
+    }
+}
+@media (max-width: 800px){
+    .title{
+        font-size: 20px;
+    }
+    .text{
+        font-size: 10px;
+    }
+    .top{
+        margin-top: 100px;
+        a{
+            margin: 50px 30px 50px 40px;
+            padding: 5px 10px;
+            font-size: 10px;
+        }
+    }
+    .featured{
+        a{
+            margin: 50px 30px 50px 40px;
+            padding: 5px 10px;
+            font-size: 10px;
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .own-boat{
+        &__title{
+            font-size: 20px;
+        }
+        &__text{
+            font-size: 10px;
+        }
+        a{
+            margin: 50px 50px 50px 50px;
+            padding: 10px 30px;
+            font-size: 10px; 
+        }
+    }
+    .footer__sub{
+        input{
+            margin-bottom: 40px;
+            padding-right: 0;
+        }
+        button{
+            width: 100%;
+            bottom: 80px;
+            border-radius: 3px;
+        }
+    }
+}
+
+
+
+
+
+
+@media (min-width: 1520px){
+    .header__btn{
+        display: block !important;
+    }
+}

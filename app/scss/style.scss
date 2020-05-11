@@ -71,8 +71,8 @@
     button{
         position: absolute;
         top: 0;
-        right: 365px;
-        background-color: #e7434e;
+        right: 0px;
+        background-color: $red;
         border: none;
         height: 60px;
         width: 200px;
@@ -136,6 +136,25 @@ li + li{
 
 // end statistic
 // start top
+.top{
+    margin-top: 200px;
+    a{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #343434;
+        margin: 100px 360px 80px;
+        border: 1px solid #bdbdbd;
+        padding: 20px 50px;
+        border-radius: 3px;
+        background-color: #fff;
+        text-transform: uppercase;
+        transition: all .3s;
+        &:hover{
+            color: #fff;
+            background-color: $red;
+        }
+    }
+}
 .top__items{
     &-position{
         width: 725px;
@@ -172,7 +191,7 @@ li + li{
     }
     &-boats{
         position: relative;
-        background-color: #e7434e;
+        background-color: $red;
         width: 70px;
         height: 30px;
         border-radius: 3px;
@@ -206,29 +225,207 @@ li + li{
         padding-left: 20px;
     }
 }
-.more{
+
+
+// end top
+// start own-boat
+.own-boat{
+    background-image: url(../images/Background2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
     text-align: center;
-    margin: 100px 380px 80px;
-    border: 1px solid #bdbdbd;
-    display: block;
-    padding: 20px 30px;
-    border-radius: 3px;
-    transition: all .3s;
-    cursor: pointer;
-    &:hover{
-        background-color: #e7434e;
+    
+    color: #fff;
+    &__title{
+        font-size: 72px;
+        font-weight: 700;
+        padding-top: 200px;
+        font-family: 'Roboto', sans-serif;
+    }
+    &__text{
+        text-transform: uppercase;
+        font-size: 30px;
+        font-family: 'Open Sans', sans-serif;
+        padding-top: 10px;
     }
     a{
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
         color: #343434;
+        margin: 100px 380px 80px;
+        border: 1px solid #bdbdbd;
+        padding: 20px 50px;
+        border-radius: 3px;
+        background-color: $red;
+        border: none;
         transition: all .3s;
         &:hover{
-            color: #fff;
+            color: $red;
+            background-color: #fff;
         }
     }
 }
 
+// end own-boat
+// start featured
+.featured{
+    a{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #343434;
+        margin: 100px 380px 80px;
+        border: 1px solid #bdbdbd;
+        padding: 20px 50px;
+        border-radius: 3px;
+        background-color: #fff;
+        text-transform: uppercase;
+        transition: all .3s;
+        &:hover{
+            color: #fff;
+            background-color: $red;
+        }
+    }
+}
+.featured__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    &-inner{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0 0;
+        width: 535px;
+        height: 330px;
+        border-radius: 3px;
+        margin-bottom: 30px;
+    }
+    &-price{
+        width: 100px;
+        height: 40px;
+        background-color: $red;
+        border-radius: 5px;
+        color: #fff;
+        display: inline-block;
+        padding: 10px 10px;
+        margin: 30px 30px 180px;
+        font-size: 16px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+    }
+    &-name{
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        margin-left: 25px;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+    &-location{
+        position: relative;
+        display: flex;
+        font-size: 16px;
+        font-family: 'Open Sans', sans-serif;
+        color: #fff;
+        margin-left: 25px;
+        &-map{
+            margin-left: 20px;
+        }
+        &-map::before{
+            content: '';
+            position: absolute;
+            background-image: url(../images/map-marker.png);
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
+            left: 0;
+        }
+    }
+    &-location{
+        &-berths{
+            margin-left: 30px;
+        }
+        &-berths::before{
+            content: '';
+            position: absolute;
+            background-image: url(../images/account-multiple.png);
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
+            left: 10;
+        }
+    }
+}
 
-// end top
+// end featured
+// start footer
+.footer{
+    background-color: #404040;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 0px 70px;
+    }
+    &__title{
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+    &__col{
+        max-width: 160px;
+        a{
+            color: #fff;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+    }
+    &__social{
+        display: flex;
+        a{
+            padding-right: 20px;
+            margin-top: 40px;
+        }
+    }
+}
+.footer__form{
+    width: 400px;
+    position: relative;
+    input{
+        border: none;
+        border-radius: 3px;
+        background-color: #fff;
+        width: 100%;
+        height: 40px;
+        color: #000000;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        outline: none;
+        padding-left: 20px;
+        padding-right: 150px;
+        &::placeholder{
+            color: #717171;
+        }
+    }
+    button{
+        position: absolute;
+        right: 0;
+        background-color: $red;
+        border: none;
+        border-radius: 2px;
+        outline: none;
+        height: 40px;
+        width: 140px;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+    }
+}
+
+// end footer
   
+
+
+@import '_media';
